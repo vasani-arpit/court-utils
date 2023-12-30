@@ -1,6 +1,6 @@
 {
   "name": "court-utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple utils for interacting with e-courts data. ",
   "scripts": {
     "build": "rollup -c"
