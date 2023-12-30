@@ -1,0 +1,37 @@
+{
+  "name": "court-utils",
+  "version": "0.0.1",
+  "description": "A simple utils for interacting with e-courts data. ",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasani-arpit/court-utils.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "india",
+    "court",
+    "ecourts"
+  ],
+  "author": "Arpit Vasani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasani-arpit/court-utils/issues"
+  },
+  "homepage": "https://github.com/vasani-arpit/court-utils#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.9.2"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
