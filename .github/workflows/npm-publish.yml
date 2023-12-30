@@ -5,7 +5,7 @@ name: Node.js Package publish
 
 on:
   push: 
-    branches: [ master ]
+    branches: [ publish ]
   workflow_dispatch: 
 
 jobs:
