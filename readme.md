@@ -1,6 +1,6 @@
 # Indian Court Utils
 
-A simple utils functions for interacting with e-courts data. 
+A simple utils functions for interacting with Indian courts data. 
 
 ## Why?
 I have created several microservices which works with data coming from several courts of India. Instead of writing/copying function again and again. I thought it would be easier to create a package and import it everywhere. That would be easier to manage and actual code will be more readable.
@@ -20,20 +20,25 @@ import { isFilingNumber } from 'court-utils'
 ## Methods
 
 #### isFilingNumber(number_in_string)
+
 returns a boolean whether given string is filing number or not
 
 #### isCaseNumber(number_in_string)
+
 returns a boolean whether given string is case number number or not
 
 ### formatCINumber(number_in_string)
+
 While showing the CI number they shows like GJHC01-123456-123456 but internally they use it like GJHC01123456123456 so this method returns that.
 
 ### formatOriginalCaseNumber(number_in_string)
+
 case number usually has `/` in them like `R/SCA/12319/2020` some times it confuses language because `/` is being used as path navigator in Linux. let's say you are storing a file at a location using path if you add case number like the example then it will create 3 folders R, SCA and 12319 and store the data with filename 2020.
 
 so better to swap those `/` slashes to `-` dashes. That's what this method does.
 
 ### getInternalCaseNumber(number_in_string)
+
 takes something like `R/SCA/12319/2020` and returns 202100123192020 which is usable internally to communicate further with court's data.
 
 ## dependencies
