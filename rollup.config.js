@@ -17,9 +17,9 @@ export default [
             }
         ],
         plugins: [
-            resolve({
-                extensions
-            }),
+            // resolve({
+            //     extensions
+            // }),
             terser()
         ],
     }
