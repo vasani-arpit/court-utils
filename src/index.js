@@ -1,5 +1,4 @@
 import _ from 'lodash-es'
-import { padWithZeroes } from './utils'
 
 export function isFilingNumber(number) {
     return number.startsWith('F/')
@@ -103,4 +102,12 @@ export function getInternalCaseNumber(originalCaseNumber) {
 
 export function getYearFromCaseNumber(caseNumber) {
     return caseNumber.substr(-4);
+}
+
+export function padWithZeroes(number, length) {
+    var my_string = '' + number;
+    while (my_string.length < length) {
+        my_string = '0' + my_string;
+    }
+    return my_string;
 }
